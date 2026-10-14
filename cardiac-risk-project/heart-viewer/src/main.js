@@ -780,6 +780,7 @@ const loader = new GLTFLoader();
 const anatomicalLabels = [];
 let anatomyVisible = true;
 let heartModel = null;
+const heartModelUrl = `${import.meta.env.BASE_URL}heart.glb`;
 
 function createAnatomicalLabels(heartModel) {
   const note = document.querySelector('#anatomy-note');
@@ -861,7 +862,7 @@ function createAnatomicalLabels(heartModel) {
 }
 
 loader.load(
-  '/heart.glb',
+  heartModelUrl,
   (gltf) => {
     heartModel = gltf.scene;
     const box = new THREE.Box3().setFromObject(heartModel);
@@ -887,11 +888,16 @@ loader.load(
     renderAnatomyLegend();
 
     loading?.remove();
-    console.log('3D anatomical heart loaded successfully.');
+    console.log('3D anatomical heart loaded successfully from', heartModelUrl);
   },
-  undefined,
+  (progressEvent) => {
+    if (progressEvent && progressEvent.total) {
+      const percent = (progressEvent.loaded / progressEvent.total) * 100;
+      console.log(`Heart model loading progress: ${percent.toFixed(1)}%`);
+    }
+  },
   (error) => {
-    console.error('Heart model loading failed:', error);
+    console.error('Heart model loading failed for URL:', heartModelUrl, error);
     if (loading) {
       loading.textContent = 'Heart model could not load. Check public/heart.glb.';
       loading.classList.add('error');
