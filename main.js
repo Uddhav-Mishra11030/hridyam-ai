@@ -9,7 +9,7 @@ const APP_BRAND = 'HRIYDAM AI';
 document.title = `${APP_BRAND} | Intelligent Cardiac Risk Visualization`;
 
 const app = document.querySelector('#app');
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000').replace(/\/$/, '');
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 const modelOrder = ['CAD', 'LAD', 'LCX', 'RCA'];
 const resultState = {
   fields: [],
@@ -20,7 +20,7 @@ const resultState = {
 
 function getApiErrorMessage(error) {
   if (error && typeof error.message === 'string' && /Failed to fetch|fetch/i.test(error.message)) {
-    return `Unable to reach the API at ${API_BASE_URL}. Start the Flask backend on port 5000 and confirm port 5000 is free.`;
+    return `Unable to reach the API. Check that the Flask backend is running and that the Vite proxy is configured.`;
   }
 
   if (error && typeof error.message === 'string') {

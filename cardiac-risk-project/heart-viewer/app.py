@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import joblib
@@ -19,13 +20,14 @@ ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:4173",
+    "http://127.0.0.1:4173",
 ]
 
 app = Flask(__name__)
 CORS(
     app,
-    resources={r"/api/*": {"origins": ALLOWED_ORIGINS}},
-    supports_credentials=True,
+    resources={r"/api/*": {"origins": ALLOWED_ORIGINS + ["*"]}},
     allow_headers=["Content-Type", "Authorization", "Accept"],
     methods=["GET", "POST", "OPTIONS"],
 )
@@ -164,4 +166,6 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", "5001"))
+    app.run(host=host, port=port, debug=False)
