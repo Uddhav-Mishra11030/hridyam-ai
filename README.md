@@ -46,4 +46,4 @@ HRIDYAM AI is a research and educational prototype. Its predictions are intended
 
 Making heart health easier to understand through Artificial Intelligence.
 
-HRIDYAM AI — See More. Know More. Care Better.
+HRIDYAM AI — Because every heart matters.
