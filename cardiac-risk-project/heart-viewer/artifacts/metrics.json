@@ -1,0 +1,313 @@
+{
+  "dataset_rows": 303,
+  "feature_columns": [
+    "Age",
+    "Weight",
+    "Length",
+    "Sex",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "BP",
+    "PR",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "target_columns": {
+    "CAD": "Cath",
+    "LAD": "LAD",
+    "LCX": "LCX",
+    "RCA": "RCA"
+  },
+  "targets": {
+    "CAD": {
+      "accuracy": 0.8421052631578947,
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.8888888888888888,
+      "roc_auc": 0.8720538720538721,
+      "confusion_matrix": [
+        [
+          16,
+          6
+        ],
+        [
+          6,
+          48
+        ]
+      ],
+      "training_samples": 227,
+      "testing_samples": 76,
+      "feature_importance": [
+        {
+          "feature": "Tinversion",
+          "importance": 0.01790873717543926
+        },
+        {
+          "feature": "St Depression",
+          "importance": 0.01363793700242295
+        },
+        {
+          "feature": "Nonanginal",
+          "importance": 0.012300373768263605
+        },
+        {
+          "feature": "Age",
+          "importance": 0.01160853608798158
+        },
+        {
+          "feature": "TG",
+          "importance": 0.011115239392697984
+        },
+        {
+          "feature": "BMI",
+          "importance": 0.010384215991692591
+        },
+        {
+          "feature": "Obesity",
+          "importance": 0.010227658851511978
+        },
+        {
+          "feature": "EF-TTE",
+          "importance": 0.009488378887332805
+        },
+        {
+          "feature": "Region RWMA",
+          "importance": 0.009488378887332805
+        },
+        {
+          "feature": "BBB",
+          "importance": 0.00815494393476035
+        }
+      ]
+    },
+    "LAD": {
+      "accuracy": 0.7763157894736842,
+      "precision": 0.7872340425531915,
+      "recall": 0.8409090909090909,
+      "f1_score": 0.8131868131868132,
+      "roc_auc": 0.828125,
+      "confusion_matrix": [
+        [
+          22,
+          10
+        ],
+        [
+          7,
+          37
+        ]
+      ],
+      "training_samples": 227,
+      "testing_samples": 76,
+      "feature_importance": [
+        {
+          "feature": "Typical Chest Pain",
+          "importance": 0.034874981246855084
+        },
+        {
+          "feature": "HTN",
+          "importance": 0.022036417688591613
+        },
+        {
+          "feature": "Nonanginal",
+          "importance": 0.015032988506364165
+        },
+        {
+          "feature": "Edema",
+          "importance": 0.01318681318681314
+        },
+        {
+          "feature": "Lung rales",
+          "importance": 0.010549450549450511
+        },
+        {
+          "feature": "Dyspnea",
+          "importance": 0.007912087912087884
+        },
+        {
+          "feature": "Region RWMA",
+          "importance": 0.005435527539314311
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "importance": 0.005274725274725256
+        },
+        {
+          "feature": "Neut",
+          "importance": 0.005274725274725256
+        },
+        {
+          "feature": "Atypical",
+          "importance": 0.0037928288602951054
+        }
+      ]
+    },
+    "LCX": {
+      "accuracy": 0.6710526315789473,
+      "precision": 0.5806451612903226,
+      "recall": 0.6,
+      "f1_score": 0.5901639344262295,
+      "roc_auc": 0.6956521739130435,
+      "confusion_matrix": [
+        [
+          33,
+          13
+        ],
+        [
+          12,
+          18
+        ]
+      ],
+      "training_samples": 227,
+      "testing_samples": 76,
+      "feature_importance": [
+        {
+          "feature": "Atypical",
+          "importance": 0.09380511284397197
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "importance": 0.08962360629969449
+        },
+        {
+          "feature": "Systolic Murmur",
+          "importance": 0.07732184289233722
+        },
+        {
+          "feature": "DM",
+          "importance": 0.04929566205037461
+        },
+        {
+          "feature": "Dyspnea",
+          "importance": 0.04596038053858813
+        },
+        {
+          "feature": "FBS",
+          "importance": 0.045295915532092244
+        },
+        {
+          "feature": "Sex",
+          "importance": 0.034624432712790566
+        },
+        {
+          "feature": "HTN",
+          "importance": 0.022922987002143125
+        },
+        {
+          "feature": "EF-TTE",
+          "importance": 0.022467326433481906
+        },
+        {
+          "feature": "VHD",
+          "importance": 0.016681570016445747
+        }
+      ]
+    },
+    "RCA": {
+      "accuracy": 0.6842105263157895,
+      "precision": 0.5862068965517241,
+      "recall": 0.5862068965517241,
+      "f1_score": 0.5862068965517241,
+      "roc_auc": 0.7615553925165077,
+      "confusion_matrix": [
+        [
+          35,
+          12
+        ],
+        [
+          12,
+          17
+        ]
+      ],
+      "training_samples": 227,
+      "testing_samples": 76,
+      "feature_importance": [
+        {
+          "feature": "DM",
+          "importance": 0.08280054640139536
+        },
+        {
+          "feature": "Atypical",
+          "importance": 0.04092522363770321
+        },
+        {
+          "feature": "VHD",
+          "importance": 0.03750756200846941
+        },
+        {
+          "feature": "Dyspnea",
+          "importance": 0.028275862068965464
+        },
+        {
+          "feature": "Current Smoker",
+          "importance": 0.014882032667876577
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "importance": 0.00992701188708447
+        },
+        {
+          "feature": "Neut",
+          "importance": 0.009903484602798617
+        },
+        {
+          "feature": "Sex",
+          "importance": 0.009857144225886483
+        },
+        {
+          "feature": "Lymph",
+          "importance": 0.009851630830436674
+        },
+        {
+          "feature": "Region RWMA",
+          "importance": 0.008670785672538983
+        }
+      ]
+    }
+  },
+  "warning": "Educational research prototype only. Not validated for clinical diagnosis."
+}

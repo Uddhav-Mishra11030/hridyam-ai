@@ -1,0 +1,363 @@
+[
+  {
+    "name": "Age",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Weight",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Length",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Sex",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "Fmale",
+      "Male"
+    ]
+  },
+  {
+    "name": "BMI",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "DM",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "HTN",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Current Smoker",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "EX-Smoker",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "FH",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Obesity",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "CRF",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "CVA",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Airway disease",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Thyroid Disease",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "CHF",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "DLP",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "BP",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "PR",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Edema",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Weak Peripheral Pulse",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Lung rales",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Systolic Murmur",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Diastolic Murmur",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Typical Chest Pain",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Dyspnea",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Function Class",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Atypical",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Nonanginal",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Exertional CP",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N"
+    ]
+  },
+  {
+    "name": "LowTH Ang",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Q Wave",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "St Elevation",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "St Depression",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Tinversion",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "LVH",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "Poor R Progression",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "N",
+      "Y"
+    ]
+  },
+  {
+    "name": "BBB",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "LBBB",
+      "N",
+      "RBBB"
+    ]
+  },
+  {
+    "name": "FBS",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "CR",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "TG",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "LDL",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "HDL",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "BUN",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "ESR",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "HB",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "K",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Na",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "WBC",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Lymph",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Neut",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "PLT",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "EF-TTE",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "Region RWMA",
+    "kind": "number",
+    "default": null
+  },
+  {
+    "name": "VHD",
+    "kind": "category",
+    "default": null,
+    "options": [
+      "Moderate",
+      "N",
+      "Severe",
+      "mild"
+    ]
+  }
+]
