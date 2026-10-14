@@ -1,6 +1,6 @@
 ❤️ HRIDYAM AI
 
-See More. Know More. Care Better.
+Because every heart matters.
 
 HRIDYAM AI is an AI-powered cardiovascular risk prediction and visualization platform designed to make complex heart health information easier to understand.
 
