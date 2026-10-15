@@ -22,6 +22,9 @@ ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:4173",
     "http://127.0.0.1:4173",
+    "https://uddhav-mishra11030.github.io",
+    "https://hridyam-ai-ud-251072.onrender.com",
+    "https://hridyam-api-ud-251072.onrender.com",
 ]
 
 app = Flask(__name__)
@@ -30,6 +33,7 @@ CORS(
     resources={r"/api/*": {"origins": ALLOWED_ORIGINS + ["*"]}},
     allow_headers=["Content-Type", "Authorization", "Accept"],
     methods=["GET", "POST", "OPTIONS"],
+    supports_credentials=True,
 )
 
 

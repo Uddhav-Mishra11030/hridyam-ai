@@ -7,7 +7,10 @@ const APP_BRAND = 'HRIYDAM AI';
 document.title = `${APP_BRAND} | Intelligent Cardiac Risk Visualization`;
 
 const app = document.querySelector('#app');
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
+const DEFAULT_API_BASE_URL = window.location.hostname.includes('github.io')
+  ? 'https://hridyam-api-ud-251072.onrender.com'
+  : 'http://127.0.0.1:5001';
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE_URL).replace(/\/$/, '');
 const modelOrder = ['CAD', 'LAD', 'LCX', 'RCA'];
 const resultState = {
   fields: [],
